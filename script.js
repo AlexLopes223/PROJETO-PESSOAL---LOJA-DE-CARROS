@@ -1,7 +1,7 @@
-// Array para armazenar os carros
+
 let stock = []
 
-// Função para adicionar um carro ao estoque
+// COLOCAR CARRO NO ESTOQUE
 function adicionarCarro() {
     let model = prompt("Insira o modelo do carro:")
     let brand = prompt("Insira a marca do carro:")
@@ -18,7 +18,7 @@ function adicionarCarro() {
     alert(`Carro adicionado: Modelo: ${model}, Marca: ${brand}, Ano: ${year}, Preço: R$${price}`)
 }
 
-// Função para exibir todos os carros no estoque
+// MOSTRAR TODOS OS CARROS DO ESTOQUE
 function exibirEstoque() {
     if (stock.length === 0) {
         alert("O estoque está vazio.")
@@ -31,7 +31,7 @@ function exibirEstoque() {
     alert(message)
 }
 
-// Função para buscar carros por marca
+// BUSCAR CAROS POR MARCA
 function buscarPorMarca() {
     let brand = prompt("Insira a marca a ser buscada:")
     let message = `Carros da marca ${brand}:\n`
@@ -46,7 +46,7 @@ function buscarPorMarca() {
     alert(message)
 }
 
-// Função para buscar carros por ano
+// BUSCAR OS CARRO POR ANO
 function buscarPorAno() {
     let year = parseInt(prompt("Insira o ano a ser buscado:"))
     let message = `Carros do ano ${year}:\n`
@@ -61,7 +61,7 @@ function buscarPorAno() {
     alert(message)
 }
 
-// Função para buscar carros por faixa de preço
+// BUSCAR CARROS PELO PREÇO
 function buscarPorFaixaDePreco() {
     let minPrice = parseFloat(prompt("Insira o preço mínimo:"))
     let maxPrice = parseFloat(prompt("Insira o preço máximo:"))
@@ -77,7 +77,7 @@ function buscarPorFaixaDePreco() {
     alert(message)
 }
 
-// Função para exibir carros armazenados
+// MOSTRAR CARROS ARMAZENADOS
 function armazenarCarrosJaFalados() {
     if (stock.length === 0) {
         alert("Nenhum carro armazenado no estoque.")
@@ -90,7 +90,7 @@ function armazenarCarrosJaFalados() {
     alert(message)
 }
 
-// Exemplo de uso
+// DICAS PARA USAR
 adicionarCarro()
 adicionarCarro()
 exibirEstoque()
